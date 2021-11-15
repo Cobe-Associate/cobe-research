@@ -1,9 +1,78 @@
 # cobe-research
 
-## Product
-新規事業のユーザー調査に使う時間を1/10以下に減らしてくれるオンラインリサーチツール
+An online research tool that reduces the time spent on new business user surveys to less than 1/10.
+
+[![Figma](https://user-images.githubusercontent.com/3213880/141861013-ad84e7ec-49fe-4225-8948-cb0444c9d2a7.png)](https://www.figma.com/proto/ORiHLKBQmHzEML2IkwptY5/200602_CobeResearch?node-id=144%3A3210&scaling=scale-down&page-id=119%3A55&starting-point-node-id=122%3A0)
+
+## System design
+
+### Technology stack and architecture
+
+* Cloud Service
+  * Firebase on Google Cloud Platform (GCP)
+* Authentication
+  * Firebase Authentication
+* Database
+  * Firebase Firestone for realtime
+  * Firebase Storage to store image and video files
+  * Google Storage to back up Firestone
+* Hosting
+  * Firebase Hosting
+* Backend
+  * Firebase Function
+  * Firebase Extensions to resize image
+* Frontend
+  * TypeScript + Vue.js
+* UI F/W
+  * Vuetify. Google Material Design
+
+![architecture](https://user-images.githubusercontent.com/3213880/141861668-5a437c1c-5a5c-4fa9-a4ae-58d1896bd4df.png)
+
+### DB
+
+See https://github.com/Cobe-Associate/cobe-research/tree/main/src/store.
+
+### Backup
+
+Back up only Firestone in production environment. See https://github.com/Cobe-Associate/cobe-research/blob/main/functions/src/firestone-backup.ts.
 
 ## Project setup
+
+### Register Firebase and external　services.
+
+* Register firebase and get config.
+
+* Register email delivery service [SendGrid](https://sendgrid.kke.co.jp) and get API key.
+
+* Register site search & discovery service [Algolia](https://www.algolia.com) and get app id and API key.
+
+### Setup .env files.
+
+Setup `.env.development`, `.env.staging`, and `.env.production`. 
+
+```
+NODE_ENV=production
+VUE_APP_ENV=production
+
+VUE_APP_ADMIN_EMAIL=["sample@cobe.work"]
+
+VUE_APP_ALGOLIA_APP_ID=xxxxxx
+VUE_APP_ALGOLIA_API_KEY=xxxxxx
+
+VUE_APP_FIREBASE_CONFIG={"apiKey": "xxxxxx", "authDomain": "xxxxxx", "databaseURL": "xxxxxx", "projectId": "xxxxxx", "storageBucket": "xxxxxx", "messagingSenderId": "xxxxxx", "appId": "xxxxxx", "measurementId": "xxxxxx"}
+
+VUE_APP_FUNCTION_URL=xxxxxx
+
+VUE_APP_FB_EXT_SIZES_OF_RESIZED_IMAGES=200x200
+
+VUE_APP_OBSERVER_EMAIL=sample@cobe.work
+VUE_APP_OBSERVER_PW=123456
+
+VUE_APP_SENDGRID_KEY=xxxxxx
+```
+
+### Install libs.
+
 ```sh
 yarn install
 ```
