@@ -2,7 +2,7 @@
 
 An online research tool that reduces the time spent on new business user surveys to less than 1/10.
 
-[![Figma](https://user-images.githubusercontent.com/3213880/141861013-ad84e7ec-49fe-4225-8948-cb0444c9d2a7.png)](https://www.figma.com/proto/ORiHLKBQmHzEML2IkwptY5/200602_CobeResearch?node-id=144%3A3210&scaling=scale-down&page-id=119%3A55&starting-point-node-id=122%3A0)
+[![Figma](https://user-images.githubusercontent.com/3213880/141861013-ad84e7ec-49fe-4225-8948-cb0444c9d2a7.png)](https://www.figma.com/proto/ORiHLKBQmHzEML2IkwptY5/200602_CobeResearch?node-id=122%3A0&scaling=scale-down&page-id=119%3A55&starting-point-node-id=122%3A0)
 
 ## System design
 
