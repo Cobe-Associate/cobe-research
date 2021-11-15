@@ -1,5 +1,8 @@
 # cobe-research
 
+## Product
+新規事業のユーザー調査に使う時間を1/10以下に減らしてくれるオンラインリサーチツール
+
 ## Project setup
 ```sh
 yarn install
@@ -57,3 +60,9 @@ See */functions/package.json*
 ```sh
 yarn lint
 ```
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2021, Cobe Associe Llc. All Right Reserved.
