@@ -1,0 +1,13 @@
+[{
+  "origin": [
+  	"https://cobequest.net",
+  	"https://www.cobequest.net",
+  	"https://stg.cobequest.net",
+  	"https://dev.cobequest.net",
+  	"https://cobe-research-prod.firebaseapp.com",
+  	"https://cobe-research-stg.firebaseapp.com",
+  	"https://cobe-research-dev.firebaseapp.com",
+  	"http://localhost:8080"],
+  "method": ["GET"],
+  "maxAgeSeconds": 3600
+}]

@@ -1,0 +1,14 @@
+{
+  "indexes": [{
+    "collectionGroup": "observerAnswers",
+    "queryScope": "COLLECTION",
+    "fields": [{
+      "fieldPath": "projectRef",
+      "order": "ASCENDING"
+    }, {
+    "fieldPath": "createdAt",
+      "order": "ASCENDING"
+    }]
+  }],
+  "fieldOverrides": []
+}
