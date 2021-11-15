@@ -23,7 +23,6 @@ An online research tool that reduces the time spent on new business user surveys
   * Firebase Extensions to resize image
   * SendGrid for email delivery
   * Algolia for site search and discovery
-  * A
 * Frontend
   * TypeScript + Vue.js
 * UI F/W
