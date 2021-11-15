@@ -43,6 +43,7 @@ Back up only Firestone in production environment. See https://github.com/Cobe-As
 * Register firebase and get config.
 
 * Register email delivery service [SendGrid](https://sendgrid.kke.co.jp) and get API key.
+* Note! Set up https://github.com/Cobe-Associate/cobe-research-ext to post SendGrid API from web browser avoiding CORS.
 
 * Register site search & discovery service [Algolia](https://www.algolia.com) and get app id and API key.
 
