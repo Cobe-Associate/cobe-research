@@ -21,6 +21,9 @@ An online research tool that reduces the time spent on new business user surveys
 * Backend
   * Firebase Function
   * Firebase Extensions to resize image
+  * SendGrid for email delivery
+  * Algolia for site search and discovery
+  * A
 * Frontend
   * TypeScript + Vue.js
 * UI F/W
@@ -44,7 +47,7 @@ Back up only Firestone in production environment. See https://github.com/Cobe-As
 
 * Register email delivery service [SendGrid](https://sendgrid.kke.co.jp) and get API key. Note! Set up https://github.com/Cobe-Associate/cobe-research-ext to post SendGrid API from web browser avoiding CORS.
 
-* Register site search & discovery service [Algolia](https://www.algolia.com) and get app id and API key.
+* Register site search and discovery service [Algolia](https://www.algolia.com) and get app id and API key.
 
 ### Setup .env files.
 
